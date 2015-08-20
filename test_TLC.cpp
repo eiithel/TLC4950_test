@@ -12,22 +12,18 @@ void setup()
 	delay(2000);
 	digitalWrite(led,LOW);
 	delay(1000);
-	digitalWrite(led,HIGH);
+	digitalWrite(led,HIGH);//debug
 
 	Tlc.init(4095);
 	Tlc.update();
 	delay(75);
-
 	Tlc.clear();
-	Tlc.update();
+	Tlc.update();//you have to use update() after a clear()
 	delay(75);
-
 	Tlc.init(4095);
 
-	// Add your initialization code here
 }
 
-// The loop function is called in an endless loop
 void loop()
 {
 
@@ -64,5 +60,4 @@ void loop()
 
 		delay(75);
 	}
-	//Add your repeated code here
 }
